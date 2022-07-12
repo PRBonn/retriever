@@ -1,0 +1,34 @@
+experiment:
+    id: tmp
+
+
+##Training
+train:
+    n_gpus: 1
+    max_epoch: 200
+    lr: 0.0001
+
+##Loss
+loss:
+    margin_1: 0.5
+    margin_2: 0.2
+    lazy: True
+
+##Network
+network_architecture: PNPerceiverModule
+
+point_net:
+    input_dim: 6
+model:
+    norm: True # Normalize
+    input_dim: 512
+    latent_dim: 256
+    num_latents: 64
+    num_attents: 1
+    num_transf_per_attent: 4
+    dropout: 0.0
+    num_heads: 1
+net_vlad:
+        in_dim: 512
+        out_dim: 256
+        nr_center: 64

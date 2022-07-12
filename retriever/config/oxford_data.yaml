@@ -1,0 +1,8 @@
+dataset_loader: 'OxfordEmbeddingPad'
+data_dir: '/data/oxford_compressed/'
+train_queries: '/data/oxford_compressed/training_queries_baseline.pickle'
+test_queries: '/data/oxford_compressed/test_queries_baseline.pickle'
+num_positives: 2
+num_negatives: 18
+batch_size: 2
+num_worker: 6

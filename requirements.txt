@@ -1,0 +1,8 @@
+pytorch_lightning==1.5.8
+matplotlib==3.4.2
+numpy==1.17.4
+tqdm==4.62.3
+torch==1.10.0+cu113
+diskcache==5.2.1
+Click==7.0
+PyYAML==6.0
