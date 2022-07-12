@@ -19,5 +19,5 @@ Point Cloud-based Place Recognition in Compressed Map
 
 
 ## Data
-- The precompressed point cloud maps can be downloaded [here](http://www.ipb.uni-bonn.de/html/projects/retriever/oxford_compressed.zip).
+- The precompressed point cloud maps can be downloaded [here](https://www.ipb.uni-bonn.de/html/projects/retriever/oxford_compressed.zip).
 - For the uncompressed point clouds, I refer to the [PointNetVLAD](https://github.com/mikacuy/pointnetvlad).
