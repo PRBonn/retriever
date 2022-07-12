@@ -27,3 +27,16 @@ All the following commands should be run in `retriever/`
 ## Data
 - The precompressed point cloud maps can be downloaded [here](https://www.ipb.uni-bonn.de/html/projects/retriever/oxford_compressed.zip).
 - For the uncompressed point clouds, I refer to the [PointNetVLAD](https://github.com/mikacuy/pointnetvlad).
+
+## Citation
+
+If you use this library for any academic work, please cite the original paper.
+
+```bibtex
+@inproceedings{wiesmann2022icra,
+author = {L. Wiesmann and R. Marcuzzi and C. Stachniss and J. Behley},
+title = {{Retriever: Point Cloud Retrieval in Compressed 3D Maps}},
+booktitle = {Proc.~of the IEEE Intl.~Conf.~on Robotics \& Automation (ICRA)},
+year = 2022,
+}
+```
