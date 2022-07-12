@@ -41,8 +41,6 @@ def computeLatentVectors(data_loader, model):
               help='dataset',
               required=True)
 def main(checkpoint, dataset, base_dir):
-    cfg = torch.load(checkpoint)['hypesr_parameters']
-
     model = models.PNPerceiverModule.load_from_checkpoint(checkpoint_path=checkpoint).cuda()
     model.eval()
     
@@ -86,6 +84,8 @@ def main(checkpoint, dataset, base_dir):
                         seq_i, scan_id, target_seq=seq_j)
                     true_positives = torch.tensor(
                         true_positives, dtype=query_nn.dtype, device=query_nn.device)
+                    if len(true_positives) < 1:
+                        continue
                     num_pos += 1
                     is_in = query_nn[scan_id:scan_id+1,
                                      :] == true_positives.unsqueeze(1)
