@@ -1,0 +1,35 @@
+data_config:
+  batch_size: 8
+  data_dir: /bla/oxford_emb_npy/
+  dataset_loader: OxfordEmbeddingPad
+  num_negatives: 18
+  num_positives: 2
+  num_worker: 6
+  test_queries: /bla/test_queries_baseline.pickle
+  train_queries: /bla/training_queries_baseline.pickle
+experiment:
+  id: perceiver_pn
+loss:
+  lazy: true
+  margin_1: 0.5
+  margin_2: 0.2
+model:
+  dropout: 0.0
+  input_dim: 512
+  latent_dim: 256
+  norm: true
+  num_attents: 1
+  num_heads: 1
+  num_latents: 64
+  num_transf_per_attent: 4
+net_vlad:
+  in_dim: 512
+  nr_center: 64
+  out_dim: 256
+network_architecture: PNPerceiverModule
+point_net:
+  input_dim: 6
+train:
+  lr: 0.0001
+  max_epoch: 400
+  n_gpus: 1

@@ -9,6 +9,8 @@ Point Cloud-based Place Recognition in Compressed Map
 
 ### Training
 
+All the following commands should be run in `retriever/`
+
 - Please update the config files (especially the `oxford_data.yaml` to match your data_dir)
 - Run the training: `python train.py`
 - The output will be saved in `retriever/experiments/{EXPERIMENT_ID}`
@@ -16,6 +18,9 @@ Point Cloud-based Place Recognition in Compressed Map
 ### Testing
 
 - Test the model by running: `python test.py --checkpoint {PATH/TO/CHECKPOINT.ckpt} --dataset {DATASET} --base_dir {PATH/TO/DATA}`, where `{DATASET}` is e.g. `oxford`
+- The output will be saved in the same folder of the checkpoint
+- All the results can be visualized with: `python scripts/vis_results.py`
+- The numbers of the paper are in `experiments/perceiver_pn/default/version_15/checkpoints/oxford_evaluation_query.txt`
 
 
 ## Data
