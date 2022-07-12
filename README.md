@@ -21,6 +21,7 @@ All the following commands should be run in `retriever/`
 - The output will be saved in the same folder of the checkpoint
 - All the results can be visualized with: `python scripts/vis_results.py`
 - The numbers of the paper are in `experiments/perceiver_pn/default/version_15/checkpoints/oxford_evaluation_query.txt`
+- The pretrained model can be downloaded here [here](https://www.ipb.uni-bonn.de/html/projects/retriever/perceiver_pn_epoch=119_val_top_1_acc=0.97.ckpt) and should be placed into `experiments/perceiver_pn/default/version_15/checkpoints/`.
 
 
 ## Data
